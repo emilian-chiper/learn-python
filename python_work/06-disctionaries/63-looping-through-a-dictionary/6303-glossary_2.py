@@ -6,8 +6,5 @@ glossary = {
     "dict": "a collection of key:value pairs"
 }
 
-print(f"In Python, a variable is {glossary["variable"]}")
-print(f"In Python, an int is {glossary["int"]}")
-print(f"In Python, a list is {glossary["list"]}")
-print(f"In Python, a tuple is {glossary["tuple"]}")
-print(f"In Python, a dict is {glossary["dict"]}")
+for k, v in glossary.items():
+    print(f"In Python, a {k} is {v}.")
